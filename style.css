@@ -30,7 +30,6 @@ a{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    letter-spacing: .1rem;
 }
 
 
@@ -45,6 +44,12 @@ a{
     padding: 10px;
 }
 
+.nav-img{
+    background: url("images/logo.svg") center/contain no-repeat;
+    width: 80px;
+    height: 50px;
+    margin-left: 10px;
+}
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -59,7 +64,7 @@ a{
 .nav-list li a{
     text-decoration: none;
     color: rgba(255, 255, 255, .7);
-    font-size: 1rem;
+    font-size: .9rem;
     transition: .3s ease all;
 }
 .nav-list li:hover a{
@@ -77,24 +82,24 @@ a{
 #hero .img{
     background: url("images/intro.png") center/contain no-repeat;
     width: 90%;
-    height: 400px;
-    margin-bottom: 0rem;
+    height: 300px;
 }
 #hero h1{
-    font-size: 1.8rem;
-    word-spacing: .2rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
 }
+#hero p{
+    margin-bottom: 2rem;
+}
 #hero a{
     background-color: hsl(176, 68%, 64%);
-    padding: 15px 65px;
-    font-size: 1.2rem;
-    margin: 2rem 0;
+    padding: 13px 55px;
+    font-size: 1.1rem;
     border-radius: 30px;
     text-decoration: none;
     color: white;
@@ -110,7 +115,7 @@ p{
 #services .container{
     margin: auto;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
 
 }
 .ser{
@@ -118,11 +123,11 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:2rem 0;
+    margin:1rem 0;
 }
 
 .ser h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 15px 0;
 }
 .ser svg{
@@ -135,7 +140,7 @@ p{
 #productivity .img{
     background: url("images/intro2.png") center/contain no-repeat;
     width: 90%;
-    height: 420px;
+    height: 300px;
 }
 #productivity .text{
     text-align: left;
@@ -149,14 +154,14 @@ p{
 #productivity .text a{
     color:hsl(176, 68%, 64%);
     text-decoration: none;
-    padding: 10px 0;
+    padding: 7px 0;
     border-bottom: 1px solid hsl(176, 68%, 64%);
     display: flex;
     font-size: .7rem;
-    width: 55%;
+    width: 50%;
 }
 #productivity .text a svg{
-    margin: 2px 8px;
+    margin: 1px 4px
    
 }
 
@@ -164,48 +169,55 @@ p{
 /*profile*/
 #profile{
     margin-bottom: 14rem;
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .profile-cont{
     width: 100%;
     background-color: 
     hsl(219, 30%, 18%);
-    padding: 20px 15px;
+    padding: 20px 14px;
     border: none;
     margin-bottom: 2.5rem;
     border-radius: 10px;
 
 }
 .profile-cont p{
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: left;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
 }
 .profile-pro{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 80%;
     text-align: left;
-    margin-top: -20px;
+    margin-top: 0px;
 
 }
+
+.profile-text{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+}
 .profile-pro h2{
-    font-size: 1.1rem;
-    margin-top: 35px;
+    font-size: 1rem;
 
 }
 .profile-pro p{
-    font-size: .7rem;
+    font-size: .6rem;
 
 }
 
+
 img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 /*form section*/
@@ -251,8 +263,8 @@ img{
   width: 95%;
   padding: 13px;
   color: white;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   border-radius: 30px;
   margin: 5px auto;
   border: none;
@@ -298,7 +310,7 @@ input:focus{
 #footer a{
     text-decoration: none;
     color: white;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 #footer .foot{
     display: flex;
@@ -317,7 +329,7 @@ input:focus{
 .foot-1 .icon-box p{
     width: 70%;
     margin-top:-7px ;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 .foot-1 .icon-1{
     margin-top: 2rem;
@@ -344,8 +356,14 @@ input:focus{
 }
 
 @media only screen and (min-width: 650px) and (max-width:1050px){
-  .nav-cont{
-      padding: 10px 35px;
+    .nav-img{
+        background: url("images/logo.svg") center/contain no-repeat;
+        width: 90px;
+        height: 70px;
+        margin-left: 5px;
+    }
+    .nav-cont{
+      padding: 10px 15px;
   }
    #hero .container{
        width: 60%;
@@ -394,8 +412,8 @@ input:focus{
    }
 
    #productivity .text a{
-       width: 34%;
-       font-size: .9rem;
+       width: 26%;
+       font-size: .8rem;
        word-spacing: 0rem;
    }
 
@@ -422,9 +440,7 @@ input:focus{
 }
 .profile-pro{
     width: 100%;
-    margin-top: 3px;
-    align-items: center;
-    justify-content: space-evenly;
+    /* margin-top: 3px; */
     
 }
 .profile-pro h2{
@@ -450,9 +466,13 @@ input:focus{
 }
 
 @media only screen and (min-width: 1100px){
-
+    .nav-img{
+        background: url("images/logo.svg") center/contain no-repeat;
+        width: 90px;
+        height: 80px;
+    }
     .nav-cont{
-        padding: 8px 90px;
+        padding: 0px 20px;
     }
     #hero .container{
     max-width: 50%;
@@ -513,7 +533,7 @@ input:focus{
         justify-content: flex-start;
         text-decoration: none;
         display: flex;
-        font-size: .7rem;
+        font-size: .9rem;
     }
 
     #profile{
@@ -540,7 +560,6 @@ input:focus{
     .profile-pro{
         width: 80%;
         display: flex;
-        align-items: center;
     }
     .profile-pro h2{
         font-size: 1rem;
@@ -551,10 +570,11 @@ input:focus{
     #form{
         position: absolute;
         bottom: -170px;
+        left: 3%;
       
     }
     .form-box{
-        max-width: 60%;
+        max-width: 65%;
         margin: 0 auto;
         padding: 20px;
     }
